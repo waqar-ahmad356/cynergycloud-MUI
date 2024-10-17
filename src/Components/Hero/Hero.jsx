@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material"; // Import MUI components
 import arrow from "../../assets/arrow.png"; // Arrow icon for the button
 import desktop from "../../assets/desktop-app.png"; // Image for desktop view in hero section
+import Autotyping from "../AutoTyping/AutoTyping";
 
 
 const Hero = () => {
@@ -22,17 +23,35 @@ const Hero = () => {
           {/* Hero Heading */}
           
           <Typography
-            variant="h2"
-            sx={{
-              color: "#0F172A",
-              textAlign: "center",
-              fontWeight: "bold",
-              fontSize:{xs:"24px",lg:"56px"} 
-            }}
-          >
-            Unlock Seamless with SynergyCloud:
-            <br /> Where Teams Connect and Ideas Flourish!
-          </Typography>
+  variant="h2"
+  sx={{
+    color: "#0F172A",
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: { xs: "24px", lg: "56px" }, // Responsive font size
+  }}
+>
+  Unlock Seamless  
+  <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
+    <br />
+  </Box>
+     <Autotyping />
+     <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
+    <br />
+  </Box>
+  
+   with SynergyCloud:
+  <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
+    <br />
+  </Box>
+  
+  {/* Conditional display of <br /> for small and large screens */}
+  <Box component="span" sx={{ display: { xs: "none", lg: "inline" } }}>
+    <br />
+  </Box>
+
+  Where Teams Connect and Ideas Flourish!
+</Typography>
           {/* Hero Description */}
           <Typography
             variant="body1"
