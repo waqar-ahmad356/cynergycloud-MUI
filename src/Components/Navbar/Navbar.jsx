@@ -33,9 +33,9 @@ const Navbar = () => {
     <AppBar
       position="sticky"
       style={{ backgroundColor: "#fff", boxShadow: "none" }}
-      sx={{ padding: { xs: "16px 16px", lg: "18px 150px" } }}
+      sx={{ padding: { xs: "16px 16px", lg: "18px 80px" } }}
     >
-      <Toolbar sx={{ justifyContent: "space-between", alignItems: "center" }}>
+      <Toolbar sx={{ justifyContent: "space-evenly",gap:"70px", alignItems: "center" }}>
         {/* Logo section */}
         <Box>
           <Link to="hero" offset={0} smooth={true} duration={100}>
