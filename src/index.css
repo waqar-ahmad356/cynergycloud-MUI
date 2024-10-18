@@ -7,4 +7,5 @@
 body{
   background: #fff;
   font-family: "DM Sans";
+  overflow-x: hidden;
 }

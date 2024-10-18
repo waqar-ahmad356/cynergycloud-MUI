@@ -43,7 +43,7 @@ const Footer = () => {
         
         {/* Center section with quick links */}
         <Box sx={{display:"flex",flexDirection:"column",justifyContent:"flex-start",gap:{xs:"16px",lg:"28px"}}}>
-          <Typography sx={{color:"#0F172A",fontSize:{sx:"24px",lg:"28px"},fontStyle:"normal",fontWeight:"600",lineHeight:"34px"}} >Quick Links</Typography> {/* Section heading */}
+          <Typography sx={{color:"#0F172A",fontSize:{sx:"24px",lg:"28px"},fontStyle:"normal",fontWeight:"700",lineHeight:"34px"}} >Quick Links</Typography> {/* Section heading */}
           <Box component="ul" sx={{padding:"0px",display:"flex",flexDirection:"column",listStyle:"none",gap:{xs:"16px",lg:"28px"}}}>
            {/* Unordered list for quick links */}
            {["About Us","Testimonials","Pricing","Contact Us"].map((text,index)=>(
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Right section with contact information */}
         <Box sx={{display:"flex",flexDirection:"column",justifyContent:"flex-start",gap:{xs:"16px",lg:"20px"},width:{lg:"301px"}}}>
-        <Typography sx={{color:"#0F172A",fontSize:{sx:"24px",lg:"28px"},fontStyle:"normal",fontWeight:"600",lineHeight:"34px"}} >Contact</Typography> {/* Section heading */}
+        <Typography sx={{color:"#0F172A",fontSize:{sx:"24px",lg:"28px"},fontStyle:"normal",fontWeight:"700",lineHeight:"34px"}} >Contact</Typography> {/* Section heading */}
           <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"16px",lg:"18px"},justifyContent:"flex-start"}} > {/* Contact info container */}
             
             {/* Contact info item 1: email */}

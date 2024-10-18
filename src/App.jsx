@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
+import Signup from './Components/Signup/Signup';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 const theme = createTheme({
   typography: {
@@ -18,6 +20,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Testimonials/>
+      <Signup/>
       <Footer/>
     </ThemeProvider>
   );

@@ -35,7 +35,7 @@ const Hero = () => {
   <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
     <br />
   </Box>
-    {/*<Autotyping />*/} 
+    <Autotyping /> 
      <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
     <br />
   </Box>
