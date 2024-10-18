@@ -35,7 +35,7 @@ const Hero = () => {
   <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
     <br />
   </Box>
-     <Autotyping />
+    {/*<Autotyping />*/} 
      <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
     <br />
   </Box>
@@ -132,10 +132,10 @@ const Hero = () => {
           sx={{
             position: "absolute",
             
-            top:{xs:"-20px",lg:"-230px"},
-            left:{xs:"-90px",lg:"-100px"},
+            top:{xs:"-30px",lg:"-230px"},
+            left:{xs:"-60px",lg:"-190px"},
             
-            width:{xs:"600px",lg:"1600px"},
+            width:{xs:"500px",lg:"1600px"},
             height:{xs:"200px",lg:"900px"},
             backgroundImage: "url('/images/hero-animation.png')",
             backgroundSize: "cover",
