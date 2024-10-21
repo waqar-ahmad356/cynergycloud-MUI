@@ -116,6 +116,7 @@ const Hero = () => {
           border: { xs: "1.5px solid #4C1D95", lg: "6px solid #4C1D95" }, // Border for small and large screens
           width: "100%", // Adjust width as necessary
           height: "auto", // Maintain aspect ratio
+          
         }}
       />
 
@@ -125,10 +126,10 @@ const Hero = () => {
             position: "absolute",
             
             top:{xs:"-30px",lg:"-230px"},
-            left:{xs:"-60px",lg:"-190px"},
+            left:{xs:"0px",lg:"-190px"},
             
-            width:{xs:"500px",lg:"1600px"},
-            height:{xs:"200px",lg:"900px"},
+            width:{xs:"100%",lg:"1600px"},
+            height:{xs:"100%",lg:"900px"},
             backgroundImage: "url('/images/hero-animation.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",

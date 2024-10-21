@@ -26,7 +26,7 @@ const Contact = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            width: { xs: "363px", lg: "530px" },
+            width: { xs: "100%", lg: "900px" },
             height: { xs: "auto", lg: "760px" },
             padding: { xs: "16px", lg: "47px" },
             gap: { xs: "9px", lg: "100px" },
@@ -84,7 +84,7 @@ const Contact = () => {
         </Box>
 
         {/* Contact form section */}
-        <Box sx={{ padding: { xs: "0px 0px 0px 19px", lg: "0px" }, marginTop: {xs:"5px",lg:"100px"} }}>
+        <Box sx={{ width: "100%", padding: { xs: "0px 0px 0px 19px", lg: "0px" }, marginTop: {xs:"5px",lg:"100px"} }}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: { xs: "8px", lg: "75px" } }} component="form">
             <Box sx={{ display: "flex", flexDirection: { xs: "column", lg: "row" }, gap: { xs: "8px", lg: "50px" } }}>
               <Box sx={{ display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -94,7 +94,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #170F49",
-                      width: { xs: "320px", lg: "200px" },
+                      width: { xs: "200px", lg: "200px" },
                     },
                   }}
                 />
@@ -106,7 +106,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #170F49",
-                      width: { xs: "320px", lg: "200px" },
+                      width: { xs: "200px", lg: "200px" },
                     },
                   }}
                 />
@@ -121,7 +121,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #011C2A",
-                      width: { xs: "320px", lg: "200px" },
+                      width: { xs: "100%", lg: "200px" },
                     },
                   }}
                 />
@@ -134,7 +134,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #011C2A",
-                      width: { xs: "320px", lg: "200px" },
+                      width: { xs: "100%", lg: "200px" },
                     },
                   }}
                 />
@@ -150,13 +150,13 @@ const Contact = () => {
                 InputProps={{
                   sx: {
                     borderBottom: "2px solid #011C2A",
-                    width: { xs: "320px", lg: "450px" },
+                    width: { xs: "100%", lg: "450px" },
                   },
                 }}
               />
             </Box>
 
-            <Box sx={{ marginTop: { lg: "-30px" }, marginLeft: { xs: "180px", lg: "210px" } }}>
+            <Box sx={{ marginTop: { lg: "-30px" }, marginLeft: { xs: "auto", lg: "auto" } }}>
               <Button
                 type="submit"
                 variant="contained"

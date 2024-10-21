@@ -240,7 +240,7 @@ const Pricing = () => {
           <Typography sx={{color:"#6F6C90",fontSize:{xs:"12px",lg:"21px"},fontWeight:"400",lineHeight:{xs:"20px",lg:"35px"},width:{lg:"350px"}}} >{all_data.basic_card.description}</Typography>
         </Box>
         <Box sx={{display:"flex",justifyContent:"flex-start",alignItems:"center",gap:{lg:"12px"},flexWrap:"wrap"}} >
-          <Typography sx={{color:"#0F172A",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}}} >{formatPrice(prices.basic)}</Typography>
+          <Typography sx={{color:"#0F172A",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}, wordBreak: "break-word"}} >{formatPrice(prices.basic)}</Typography>
           <Typography sx={{color:"#6F6C90",fontSize:{xs:"13px",lg:"24px"},fontWeight:"500",lineHeight:{xs:"14px",lg:"24px"}}} >/monthly</Typography>
         </Box>
         <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"17px",lg:"31px"}}} >
@@ -281,7 +281,7 @@ const Pricing = () => {
           <Typography sx={{color:"#D9DBE9",fontSize:{xs:"12px",lg:"21px"},fontWeight:"400",lineHeight:{xs:"20px",lg:"35px"},width:{lg:"350px"}}} >{all_data.pro_card.description}</Typography>
         </Box>
         <Box sx={{display:"flex",justifyContent:"flex-start",alignItems:"center",gap:{lg:"12px"},flexWrap:"wrap"}} >
-          <Typography sx={{color:"#fff",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}}} >{formatPrice(prices.pro)}</Typography>
+          <Typography sx={{color:"#fff",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}, wordBreak: "break-word"}} >{formatPrice(prices.pro)}</Typography>
           <Typography sx={{color:"#D9DBE9",fontSize:{xs:"13px",lg:"24px"},fontWeight:"500",lineHeight:{xs:"14px",lg:"24px"}}} >/monthly</Typography>
         </Box>
         <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"17px",lg:"31px"}}} >
@@ -324,7 +324,7 @@ const Pricing = () => {
           <Typography sx={{color:"#6F6C90",fontSize:{xs:"12px",lg:"21px"},fontWeight:"400",lineHeight:{xs:"20px",lg:"35px"},width:{lg:"350px"}}} >{all_data.enterprise_card.description}</Typography>
         </Box>
         <Box sx={{display:"flex",justifyContent:"flex-start",alignItems:"center",gap:{lg:"12px"},flexWrap:"wrap"}} >
-          <Typography sx={{color:"#0F172A",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}}} >{formatPrice(prices.enterprise)}</Typography>
+          <Typography sx={{color:"#0F172A",fontSize:{xs:"36px",lg:"63px"},fontWeight:"700",lineHeight:{xs:"44px",lg:"77px"}, wordBreak: "break-word"}} >{formatPrice(prices.enterprise)}</Typography>
           <Typography sx={{color:"#6F6C90",fontSize:{xs:"13px",lg:"24px"},fontWeight:"500",lineHeight:{xs:"14px",lg:"24px"}}} >/monthly</Typography>
         </Box>
         <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"17px",lg:"31px"}}} >
