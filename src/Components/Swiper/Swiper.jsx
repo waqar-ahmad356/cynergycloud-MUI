@@ -73,13 +73,24 @@ const MySwiper = () => {
           disableOnInteraction: true,
         }}
         loop={true}
+        breakpoints={{
+         
+          468: {
+            slidesPerView: 2.5, // Show partial cards on small screens
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5, // Default behavior on large screens
+            spaceBetween: 22,
+          },
+        }}
        
         modules={[Autoplay]}
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
             <Box
-              sx={{display:{xs:"none",lg:"flex"},
+              sx={{display:{xs:"flex",lg:"flex"},
                 
                 flexDirection: "column",
                 padding: { xs: "20px", lg: "30px" },

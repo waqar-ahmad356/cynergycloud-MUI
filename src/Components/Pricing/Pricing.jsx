@@ -288,19 +288,19 @@ const Pricing = () => {
           <Typography sx={{color:"#fff",fontSize:{xs:"12px",lg:"21px"},fontWeight:"700",lineHeight:{xs:"13px",lg:"23px"}}} >What’s included</Typography>
           <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"10px",lg:"25px",alignItems:"flex-start",justifyContent:"center"}}} >
             <Box sx={{display:"flex",gap:{xs:"9px",lg:"16px"},justifyContent:"flex-start",alignItems:"center"}}>
-              <Box component="img" src={check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
+              <Box component="img" src={all_data.pro_card.check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
               <Typography sx={{marginBottom:"0px",fontSize:{xs:"12px",lg:"21px"},color:"#D9DBE9",fontWeight:"400",lineHeight:{xs:"13px",lg:"23px"}}} className="mb-0 lg:text-[21px] text-[12px] text-[#170F49] font-normal lg:leading-6">{all_data.pro_card.feature_1}</Typography>
             </Box>
             <Box sx={{display:"flex",gap:{xs:"9px",lg:"16px"},justifyContent:"flex-start",alignItems:"center"}}>
-              <Box component="img" src={check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
+              <Box component="img" src={all_data.pro_card.check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
               <Typography sx={{marginBottom:"0px",fontSize:{xs:"12px",lg:"21px"},color:"#D9DBE9",fontWeight:"400",lineHeight:{xs:"13px",lg:"23px"}}} className="mb-0 lg:text-[21px] text-[12px] text-[#170F49] font-normal lg:leading-6">{all_data.pro_card.feature_2}</Typography>
             </Box>
             <Box sx={{display:"flex",gap:{xs:"9px",lg:"16px"},justifyContent:"flex-start",alignItems:"center"}}>
-              <Box component="img" src={check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
+              <Box component="img" src={all_data.pro_card.check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
               <Typography sx={{marginBottom:"0px",fontSize:{xs:"12px",lg:"21px"},color:"#D9DBE9",fontWeight:"400",lineHeight:{xs:"13px",lg:"23px"}}} className="mb-0 lg:text-[21px] text-[12px] text-[#170F49] font-normal lg:leading-6">{all_data.basic_card.feature_3}</Typography>
             </Box>
             <Box sx={{display:"flex",gap:{xs:"9px",lg:"16px"},justifyContent:"flex-start",alignItems:"center"}}>
-              <Box component="img" src={check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
+              <Box component="img" src={all_data.pro_card.check_circle} sx={{width:{xs:"18px",lg:"31px"},height:{xs:"18px",lg:"31px"}}} alt="" />
               <Typography sx={{marginBottom:"0px",fontSize:{xs:"12px",lg:"21px"},color:"#D9DBE9",fontWeight:"400",lineHeight:{xs:"13px",lg:"23px"}}} className="mb-0 lg:text-[21px] text-[12px] text-[#170F49] font-normal lg:leading-6">{all_data.pro_card.feature_4}</Typography>
             </Box>
           </Box>
