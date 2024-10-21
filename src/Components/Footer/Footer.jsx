@@ -10,9 +10,9 @@ import info from "../../assets/info.png"; // Importing the info icon
 // Footer component
 const Footer = () => {
   return (
-    <Box sx={{padding:{xs:"39px 49px 27px 28px",lg:"47px 94px"}}} >
+    <Box sx={{padding:{xs:"39px 49px 27px 28px",lg:"47px 194px"}}} >
       {/* Main footer container */}
-      <Box sx={{display:"flex",justifyContent:"space-between",flexDirection:{xs:"column",lg:"row"},gap:{xs:"16px",lg:"47px"}}} >
+      <Box sx={{display:"flex",justifyContent:"space-between",flexDirection:{xs:"column",lg:"row"},gap:{xs:"16px"}}} >
         
         {/* Left section of the footer containing the logo and a tagline */}
         <Box sx={{display:"flex",flexDirection:"column", justifyContent:"space-between",gap:{xs:"16px",lg:"94px"}}}>

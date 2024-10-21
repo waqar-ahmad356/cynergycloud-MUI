@@ -7,6 +7,7 @@ import About from './Components/About/About';
 import Signup from './Components/Signup/Signup';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Contact from './Components/Contact/Contact';
+import Pricing from './Components/Pricing/Pricing';
 
 const theme = createTheme({
   typography: {
@@ -21,6 +22,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Pricing/>
       <Testimonials/>
       <Signup/>
       <Contact/>

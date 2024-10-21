@@ -32,23 +32,15 @@ const Hero = () => {
   }}
 >
   Unlock Seamless  
-  <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
-    <br />
+  <Box  sx={{display:{xs:"inline",lg:"none"}}}>
+<br/>
   </Box>
+  
     <Autotyping /> 
-     <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
-    <br />
+    <Box  sx={{display:{xs:"inline",lg:"none"}}}>
+<br/>
   </Box>
-  
-   with SynergyCloud:
-  <Box component="span" sx={{ display: { xs: "inline", lg: "none" } }}>
-    <br />
-  </Box>
-  
-  {/* Conditional display of <br /> for small and large screens */}
-  <Box component="span" sx={{ display: { xs: "none", lg: "inline" } }}>
-    <br />
-  </Box>
+    
 
   Where Teams Connect and Ideas Flourish!
 </Typography>

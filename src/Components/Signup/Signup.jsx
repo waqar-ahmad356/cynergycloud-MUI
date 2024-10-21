@@ -6,7 +6,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 
 const Signup = () => {
   return (
-    <Box sx={{padding:{xs:"12px 13px",lg:"47px 18px"},backgroundColor:{xs:"white",lg:"#eeeeee"}}}  id="signup">
+    <Box sx={{padding:{xs:"0px 13px",lg:"47px 18px"},backgroundColor:{xs:"white",lg:"#eeeeee"}}}  id="signup">
       <Box sx={{padding:{lg:"73px 178px"},display:"flex",flexDirection:{xs:"column",lg:"row"},justifyContent:{xs:"center",lg:"center"},alignItems:{xs:"center",lg:"center"},gap:{xs:"49px",lg:"94px"}}} >
         
         {/* Signup Form Section */}
