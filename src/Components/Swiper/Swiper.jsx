@@ -65,8 +65,8 @@ const MySwiper = () => {
   return (
     <Box sx={{ overflowX: "hidden", padding: { lg: 0 } }}>
       <Swiper
-        spaceBetween={22}
-        slidesPerView={5}
+        spaceBetween={22} // Default space between slides
+        slidesPerView={5}  // Default number of slides for large screens
         centeredSlides={true}
         autoplay={{
           delay: 100,
@@ -74,38 +74,45 @@ const MySwiper = () => {
         }}
         loop={true}
         breakpoints={{
-         
-          468: {
-            slidesPerView: 2.5, // Show partial cards on small screens
-            spaceBetween: 10,
+          0: {
+            slidesPerView: 3, // For extra small devices (show 1 full and part of 2nd slide)
+            spaceBetween: 10,   // Less space between slides
+          },
+          600: {
+            slidesPerView: 3, // For small devices (show 2 slides)
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3, // For medium devices
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 5, // Default behavior on large screens
+            slidesPerView: 5, // For large devices (default)
             spaceBetween: 22,
           },
         }}
-       
         modules={[Autoplay]}
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
             <Box
-              sx={{display:{xs:"flex",lg:"flex"},
-                
+              sx={{
+                display: { xs: "flex", lg: "flex" },
                 flexDirection: "column",
                 padding: { xs: "20px", lg: "30px" },
-                gap: { xs: "41px", lg: "96px" },
+                gap: { xs: "10px", lg: "96px" },
                 backgroundColor: "#eeeeee",
-                width: { xs: "100px", lg: "200px" },
+                width: { xs: "150px", lg: "200px" },
                 borderRadius: "12px",
                 justifyContent: "center",
+                alignItems:"center",
               }}
             >
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  gap: { xs: "10px", lg: "10px" },
+                  gap: { xs: "2px", lg: "10px" },
                   alignItems: "flex-start",
                 }}
               >
@@ -134,7 +141,7 @@ const MySwiper = () => {
                   sx={{
                     fontSize: { xs: "8px", lg: "12px" },
                     color: "#67646A",
-                    lineHeight: { xs:"10px", lg: "20px" },
+                    lineHeight: { xs: "10px", lg: "20px" },
                   }}
                 >
                   {testimonial.name}, {testimonial.company}
