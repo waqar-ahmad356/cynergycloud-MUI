@@ -10,7 +10,7 @@ const Signup = () => {
       <Box sx={{padding:{lg:"73px 178px"},display:"flex",flexDirection:{xs:"column",lg:"row"},justifyContent:{xs:"center",lg:"center"},alignItems:{xs:"center",lg:"center"},gap:{xs:"49px",lg:"94px"}}} >
         
         {/* Signup Form Section */}
-        <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"40px",lg:"68px"}}} >
+        <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"40px",lg:"68px"},width:"100%"}} >
           {/* Signup Title */}
           <Typography sx={{color:"#0F172A",fontSize:{xs:"30px",lg:"56px",fontWeight:"600"}}} className=" text-[30px] lg:text-[56px] font-semibold">Sign Up</Typography>
           
@@ -29,7 +29,7 @@ const Signup = () => {
           InputProps={{
             sx: {
               borderBottom: "2px solid #170F49",
-              width: { xs: "280px", lg: "400px" },
+              width: { xs: "250px", lg: "400px" },
               bgcolor: { lg: "transparent" },
             },
           }}
@@ -46,7 +46,7 @@ const Signup = () => {
           InputProps={{
             sx: {
               borderBottom: "1px solid #170F49",
-              width: { xs: "280px", lg: "400px" },
+              width: { xs: "250px", lg: "400px" },
               bgcolor: { lg: "transparent" },
             },
           }}
@@ -63,7 +63,7 @@ const Signup = () => {
             sx: {
               borderBottom: "1px solid #170F49",
               outlineColor:"none",
-              width: { xs: "280px", lg: "400px" },
+              width: { xs: "250px", lg: "400px" },
               bgcolor: { lg: "transparent" },
             },
           }}

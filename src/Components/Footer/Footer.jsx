@@ -21,11 +21,11 @@ const Footer = () => {
         component="img"
         src={logo}
         alt="Company Logo"
-        sx={{ width:{xs:"265px",lg:"265px"},height:{xs:"55px",lg:"55px"}
+        sx={{ width:{xs:"100%",lg:"265px"},height:{xs:"55px",lg:"55px"}
 
         }}
       />
-            <Typography sx={{width:{xs:"263px",lg:"263px"},color:"#0F172A",fontSize:"16px",marginBottom:"0px",fontStyle:"normal"}}>
+            <Typography sx={{width:{xs:"250px",lg:"263px"},color:"#0F172A",fontSize:"16px",marginBottom:"0px",fontStyle:"normal"}}>
               Empower Your Team to Communicate, Collaborate, and Create—All in
               One Place!
             </Typography> {/* Tagline */}

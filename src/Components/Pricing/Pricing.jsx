@@ -217,18 +217,18 @@ const Pricing = () => {
     <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"13px",lg:"19px"},padding:{xs:'20px 53px 48px',lg:'78px 117px'},backgroundColor:"#EEEDF5",justifyContent:"center",alignItems:"center"}}  id="pricing">
     <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"",lg:"31px"},justifyContent:"center",alignItems:"center"}} >
       <Box sx={{display:"flex",flexDirection:"column",gap:{xs:"8px",lg:"13px"},justifyContent:"center",alignItems:"center"}} >
-        <Typography sx={{color:"#0F172A",fontSize:{xs:"24px",lg:"56px"},fontWeight:"700"}} >Affordable pricing plans</Typography>
+        <Typography sx={{color:"#0F172A",fontSize:{xs:"16px",lg:"56px"},fontWeight:"700"}} >Affordable pricing plans</Typography>
         <Typography sx={{color:"#6F6C90",fontSize:{xs:"12px",lg:"21px",fontWeight:"400"}}}>Flexible Plans Tailored to Your Goals</Typography>
       </Box>
       <Box sx={{display:"flex",gap:{xs:"8px",lg:"14px",alignItems:"center"}}} className="flex flex-row lg:gap-[14px] gap-2 items-center">
-        <Typography sx={{color:"#170F49",fontSize:{xs:"12px",lg:"21px"},lineHeight:"35px"}}>How many users you have?</Typography>
-        <Box component="span" sx={{width:{xs:"53px",lg:"119px"},height:{xs:"27px",lg:"61px"},borderRadius:{xs:"8px",lg:"18px"},border:"1px solid #D9DBE9",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#fff",fontWeight:"700"}} >10</Box>
-        <Box component="span" sx={{color:"#170F49",fontSize:{xs:"12px",lg:"21px",fontWeight:"700"}}} className="text-[#170F49] lg:text-[21px] text-[12px] font-bold lg:leading-6">user</Box>
+        <Typography sx={{color:"#170F49",fontSize:{xs:"9px",lg:"21px"},lineHeight:{lg:"35px",xs:"23px"}}}>How many users you have?</Typography>
+        <Box component="span" sx={{width:{xs:"53px",lg:"119px"},fontSize:{xs:"9px",lg:"24px"},height:{xs:"27px",lg:"61px"},borderRadius:{xs:"8px",lg:"18px"},border:"1px solid #D9DBE9",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#fff",fontWeight:"700"}} >10</Box>
+        <Box component="span" sx={{color:"#170F49",fontSize:{xs:"9px",lg:"21px",fontWeight:"700"}}} className="text-[#170F49] lg:text-[21px] text-[12px] font-bold lg:leading-6">user</Box>
       </Box>
     </Box>
     <Box sx={{display:"flex",flexDirection:{xs:"column",lg:"row"},gap:{xs:"16px",lg:"30px"},alignItems:"flex-start",justifyContent:"center"}}>
     {/*----------------------Card 1---------------*/}
-      <Box sx={{display:"flex",flexDirection:"column",padding:{xs:"26px 29px",lg:"47px 56px 50px"},gap:{xs:"8px",lg:"21px"},borderRadius:{xs:"16px",lg:"28px"},border:"2px solid #EFF0F6",backgroundColor:"#fff",width:{xs:"280px",lg:"420px"}}}>
+      <Box sx={{display:"flex",flexDirection:"column",padding:{xs:"26px 29px",lg:"47px 56px 50px"},gap:{xs:"8px",lg:"21px"},borderRadius:{xs:"16px",lg:"28px"},border:"2px solid #EFF0F6",backgroundColor:"#fff",width:{xs:"100%",lg:"420px"}}}>
         <Box sx={{display:"flex",flexDirection:"row",gap:"12px"}} >
           <Box component="img" src={basic} sx={{width:{xs:"48px",lg:"85px",height:{xs:"48px",lg:"85px"}}}} className="lg:w-[85px] w-[48px] h-[48px] lg:h-[85px]" alt="basic-plan" />
           <Box  >
