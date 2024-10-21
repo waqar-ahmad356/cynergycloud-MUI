@@ -94,7 +94,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #170F49",
-                      width: { xs: "200px", lg: "200px" },
+                      width: { xs: "100%", lg: "200px" },
                     },
                   }}
                 />
@@ -106,7 +106,7 @@ const Contact = () => {
                   InputProps={{
                     sx: {
                       borderBottom: "2px solid #170F49",
-                      width: { xs: "200px", lg: "200px" },
+                      width: { xs: "100%", lg: "200px" },
                     },
                   }}
                 />
