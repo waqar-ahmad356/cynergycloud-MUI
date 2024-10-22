@@ -99,7 +99,7 @@ const MySwiper = () => {
               sx={{
                 display: { xs: "flex", lg: "flex" },
                 flexDirection: "column",
-                padding: { xs: "20px", lg: "30px" },
+                padding: { xs: "10px", lg: "30px" },
                 gap: { xs: "10px", lg: "96px" },
                 backgroundColor: "#eeeeee",
                 width: { xs: "85px", lg: "200px" },
