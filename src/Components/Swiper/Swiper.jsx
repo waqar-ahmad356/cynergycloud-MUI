@@ -102,7 +102,7 @@ const MySwiper = () => {
                 padding: { xs: "20px", lg: "30px" },
                 gap: { xs: "10px", lg: "96px" },
                 backgroundColor: "#eeeeee",
-                width: { xs: "150px", lg: "200px" },
+                width: { xs: "85px", lg: "200px" },
                 borderRadius: "12px",
                 justifyContent: "center",
                 alignItems:"center",
