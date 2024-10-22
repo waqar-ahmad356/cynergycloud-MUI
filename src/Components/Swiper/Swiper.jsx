@@ -1,13 +1,11 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay } from "swiper/modules";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import testimonial_icon from "../../assets/testimonial-icon.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Box, Card, Typography } from "@mui/material";
+import testimonial_icon from "../../assets/testimonial-icon.png"; // Import the icon
 
+// Testimonials array
 const testimonials = [
   {
     id: 1,
@@ -61,98 +59,80 @@ const testimonials = [
   // Add more testimonials as needed...
 ];
 
-const MySwiper = () => {
+const ContinuousSlider = () => {
+  // Settings for the slider
+  const settings = {
+    dots: false, // Disable dots
+    infinite: true, // Infinite scrolling
+    speed: 3000, // Speed of transition
+    slidesToShow: 4, // Show 5 slides at once by default
+    slidesToScroll: 1, // Scroll one slide at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 0, // Set delay to 0 (continuous scroll)
+    cssEase: "linear", // Smooth transition
+    arrows: false, // Hide arrows for clean look
+    pauseOnHover: false, // No pause on hover
+    responsive: [
+      {
+        breakpoint: 768, // Adjust at screen width <= 768px (tablets/small devices)
+        settings: {
+          slidesToShow: 3, // Show 3 slides at once on small devices
+        },
+      },
+      {
+        breakpoint: 480, // Adjust at screen width <= 480px (smaller devices)
+        settings: {
+          slidesToShow: 2, // Show 2 slides at once on very small devices
+        },
+      },
+    ],
+  };
+
   return (
-    <Box sx={{ overflowX: "hidden", padding: { lg: 0 } }}>
-      <Swiper
-        spaceBetween={22} // Default space between slides
-        slidesPerView={5}  // Default number of slides for large screens
-        centeredSlides={true}
-        autoplay={{
-          delay: 100,
-          disableOnInteraction: true,
-        }}
-        loop={true}
-        breakpoints={{
-          0: {
-            slidesPerView: 3, // For extra small devices (show 1 full and part of 2nd slide)
-            spaceBetween: 10,   // Less space between slides
-          },
-          600: {
-            slidesPerView: 3, // For small devices (show 2 slides)
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 3, // For medium devices
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 5, // For large devices (default)
-            spaceBetween: 22,
-          },
-        }}
-        modules={[Autoplay]}
-      >
+    <Box sx={{ maxWidth: "100%", overflow: "hidden" }}>
+      <Slider {...settings}>
         {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <Box
+          <Box
+            key={testimonial.id}
+            sx={{
+              padding: {xs:"0 5px",lg:"0 12px"}, // Add padding to create space between slides
+            }}
+          >
+            <Card
               sx={{
-                display: { xs: "flex", lg: "flex" },
-                flexDirection: "column",
-                padding: { xs: "10px", lg: "30px" },
-                gap: { xs: "10px", lg: "96px" },
+                padding: {xs:"12px",lg:"30px"},
+                textAlign: "left",
+                width:{xs:"100%",lg:"100%"},
                 backgroundColor: "#eeeeee",
-                width: { xs: "85px", lg: "200px" },
                 borderRadius: "12px",
-                justifyContent: "center",
-                alignItems:"center",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "left",
+                justifyContent: "space-between",
+                gap:{xs:"41px",lg:"50px"}
               }}
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: { xs: "2px", lg: "10px" },
-                  alignItems: "flex-start",
-                }}
-              >
-                <Box
-                  component="img"
-                  src={testimonial.icon}
-                  alt={testimonial.name}
-                  sx={{
-                    width: { xs: "35px", lg: "79px" },
-                    height: { xs: "37px", lg: "84px" },
-                  }}
-                />
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontSize: { xs: "12px", lg: "21px" },
-                    color: "#413D45",
-                    lineHeight: { xs: "15px", lg: "30px" },
-                  }}
-                >
-                  {testimonial.feedback}
-                </Typography>
-              </Box>
-              <Box>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "8px", lg: "12px" },
-                    color: "#67646A",
-                    lineHeight: { xs: "10px", lg: "20px" },
-                  }}
-                >
-                  {testimonial.name}, {testimonial.company}
-                </Typography>
-              </Box>
+            <Box>
+            <Box
+                component="img"
+                src={testimonial.icon}
+                alt={testimonial.name}
+                sx={{ width: {xs:"35px",lg:"79px"}, height: {xs:"37px",lg:"84px"},fontWeight:"500",letterSpacing:"-0.741px",lineHeight:{xs:"16px",lg:"38px"}, marginBottom: "5px" }}
+              />
+              <Typography variant="body1"  sx={{fontSize:{xs:"12px",lg:"27px"},color:"#413D45" }}>
+                {testimonial.feedback}
+              </Typography>
             </Box>
-          </SwiperSlide>
+              
+              <Typography variant="body2" sx={{fontSize:{xs:"8px",lg:"14px"},color:"#67646A"}}>
+                {testimonial.name}, {testimonial.company}
+              </Typography>
+            </Card>
+          </Box>
         ))}
-      </Swiper>
+      </Slider>
     </Box>
   );
 };
 
-export default MySwiper;
+export default ContinuousSlider;

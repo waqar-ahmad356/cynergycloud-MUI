@@ -1,7 +1,8 @@
 import React from "react";
 
 
-import MySwiper from "../Swiper/Swiper";
+import ContinuousSlider from "../Swiper/Swiper";
+
 import { Box, Typography } from "@mui/material";
 
 const Testimonials = () => {
@@ -12,7 +13,8 @@ const Testimonials = () => {
       <Typography sx={{color:"#6f6c90",fontSize:{xs:"10px",lg:"21px",fontWeight:"400",lineHeight:{xs:"15px",lg:"35px"}}}} className=" lg:text-[21px] text-[10px] text-[#6f6c90] font-normal leading-4 lg:leading-8 ">See How Teams Are Thriving with SynergyCloud</Typography>
       </Box>
       <Box >
-      <MySwiper />
+     <ContinuousSlider/>
+     
       </Box>
     </Box>
   );
