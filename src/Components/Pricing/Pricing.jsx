@@ -210,7 +210,7 @@ const Pricing = () => {
 
   const formatPrice = (price) => {
     const symbol = getCurrencySymbol(selectedCurrency);
-    return symbol + (price * exchangeRate).toFixed(2);
+    return symbol + (price * exchangeRate).toFixed(0);
   };
 
   return (

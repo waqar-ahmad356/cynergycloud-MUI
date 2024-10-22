@@ -175,10 +175,12 @@ const Signup = () => {
             height: { lg: "498px" },
           }}
         >
-          <img
+          <Box
+          component="img"
             src={signup_img}
             alt="Signup Visual"
-            style={{ maxWidth: "100%", height: "auto" }}
+            sx={{maxWidth:{xs:"100%",lg:"150%"},hight:"auto"}}
+            
           />
         </Box>
       </Box>
